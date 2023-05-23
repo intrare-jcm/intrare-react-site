@@ -3,7 +3,10 @@ import Layout from 'components/layout';
 import CandidateImg from 'assets/img/bannerDiscoverVacancies.png';
 import BannerDream from 'assets/img/BannerDream.png';
 import IconHubPurpleLogo from 'assets/img/logoHubPurple.png';
-import IconDefault from 'assets/img/iconWhiteLogo.png';
+import IconCom from 'assets/img/IconCom.png';
+import IconCap from 'assets/img/IconCap.png';
+import IconMen from 'assets/img/IconMen.png'
+import {onRedirection} from "../utils/helperGeneral";
 
 /* eslint-disable react/no-unescaped-entities */
 
@@ -22,7 +25,7 @@ function DiscoverVacancies() {
               <p className="text-main-purple text-2xl text-center">Todos tenemos un lugar.</p>
               <p className="text-main-purple text-2xl text-center">Estamos aquí para encontrar el tuyo</p>
             </div>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit ">
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit " onClick={()=>onRedirection()}>
               Regístrate
             </button>
           </div>
@@ -40,7 +43,7 @@ function DiscoverVacancies() {
             <div className=" w-[80%]">
               <p className="text-main-purple text-2xl text-left">Un mundo de puertas abiertas</p>
             </div>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit ">
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit " onClick={()=>onRedirection()}>
               Entra ahora
             </button>
           </div>
@@ -53,7 +56,7 @@ function DiscoverVacancies() {
       <section className="grid grid-cols-3 gap-10 h-[76vh] bg-alabaster">
         <article className="flex flex-col w-[60%]  m-auto gap-8">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconDefault} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconCom} alt="logo  - Comunidad" className="object-contain object-center" />
           </div>
           <h1 className="text-main-purple text-center text-4xl"> Comunidad </h1>
           <p className="text-main-purple text-2xl text-center">
@@ -62,7 +65,7 @@ function DiscoverVacancies() {
         </article>
         <article className="flex flex-col w-[60%]  m-auto gap-8">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconDefault} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconCap} alt="logo  - Comunidad" className="object-contain object-center" />
           </div>
           <h1 className="text-main-purple text-center text-4xl"> Capacitaciones </h1>
           <p className="text-main-purple text-2xl text-center">
@@ -72,7 +75,7 @@ function DiscoverVacancies() {
         </article>
         <article className="flex flex-col w-[60%]  m-auto gap-8">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconDefault} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconMen} alt="logo  - Comunidad" className="object-contain object-center" />
           </div>
           <h1 className="text-main-purple text-center text-4xl"> Mentorías </h1>
           <p className="text-main-purple text-2xl text-center">
@@ -84,7 +87,7 @@ function DiscoverVacancies() {
       <section className="flex flex-col h-[50vh] bg-alabaster justify-center items-center">
         <h1 className="text-center text-main-purple text-6xl"> Las mejores vacantes en las </h1>
         <h1 className="text-center text-main-purple text-6xl">empresas más inclusivas</h1>
-        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-10">
+        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-10" onClick={()=>onRedirection()}>
           Regístrate
         </button>
       </section>

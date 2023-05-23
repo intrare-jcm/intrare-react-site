@@ -9,8 +9,13 @@ import LogoOne from 'assets/img/companies/toks.jpg';
 import LogoTwo from 'assets/img/companies/soriana.jpg';
 import LogoThree from 'assets/img/companies/qualitas.jpg';
 import LogoFour from 'assets/img/companies/teleperformance.jpg';
+import {onRedirection} from "utils/helperGeneral";
+import {useNavigate} from "react-router-dom";
 
 function Home() {
+
+  const navigate = useNavigate();
+
   return (
     <Layout>
       <section className="flex flex-row h-[78vh]">
@@ -18,7 +23,7 @@ function Home() {
           <div className="flex flex-col justify-center gap-7 w-[80%]">
             <img className="w-[50px]" src={IconWhiteLogo} alt="icon | white" />
             <p className="text-white text-6xl">El portal del talento humano </p>
-            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit ">
+            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit" onClick={()=>onRedirection('http://candidates.intrare.mx/')}>
               Regístrate
             </button>
           </div>
@@ -57,7 +62,7 @@ function Home() {
               <p className="text-main-purple text-2xl">Somos tu equipo extedido</p>
               <p className="text-main-purple text-2xl">de RH y reclutamiento</p>
             </div>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit ">
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit " onClick={() => navigate('/contact')}>
               Contrata aqui
             </button>
           </div>
@@ -72,7 +77,7 @@ function Home() {
               Utilizamos tecnología AI para crear conexiones épicas. Encuentra empleom ofrece tus vacantes. Todo en un
               sólo lugar.
             </p>
-            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit ">
+            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit" onClick={() => navigate('/hireTalent')}>
               Intégrate
             </button>
           </div>
@@ -91,7 +96,7 @@ function Home() {
           Nuestro modelo de confianza favorece el desarrollo pleno del talento y el crecimiento de las empresas, lejos
           de la discriminación.
         </p>
-        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit ">
+        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit" onClick={() => onRedirection('https://candidates.intrare.mx')}>
           Empieza hoy
         </button>
       </section>

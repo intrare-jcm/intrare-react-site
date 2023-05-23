@@ -1,13 +1,13 @@
 import React from 'react';
-import Layout from '../components/layout';
-import BannerTeam from '../assets/img/bannerTeam.png';
+import Layout from 'components/layout';
+import BannerContact from 'assets/img/bannerContact.png';
 
 function Contact() {
   return (
     <Layout>
       <section className="flex flex-row h-[58vh]">
         <article className="bg-white w-1/2">
-          <img src={BannerTeam} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
+          <img src={BannerContact} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
         <article className="bg-blue-main w-1/2 flex items-center justify-center ">
           <div className="flex flex-col justify-center gap-7 w-[80%] justify-center items-center">

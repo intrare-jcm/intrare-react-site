@@ -1,14 +1,18 @@
 import React from 'react';
 import Layout from 'components/layout';
-import BannerTeam from 'assets/img/bannerTeam.png';
 import Logo from 'assets/img/logoFooter.png';
 import HubLogoPurple from 'assets/img/logoHubPurple.png';
-import LogoOne from '../assets/img/companies/toks.jpg';
-import LogoTwo from '../assets/img/companies/soriana.jpg';
-import LogoThree from '../assets/img/companies/qualitas.jpg';
-import LogoFour from '../assets/img/companies/teleperformance.jpg';
+import LogoOne from 'assets/img/companies/toks.jpg';
+import LogoTwo from 'assets/img/companies/soriana.jpg';
+import LogoThree from 'assets/img/companies/qualitas.jpg';
+import LogoFour from 'assets/img/companies/teleperformance.jpg';
+import BannerHire from 'assets/img/bannerHireTalent.png';
+import BannerTwoHire from 'assets/img/bannerTwoHireTalent.png'
+import {useNavigate} from "react-router-dom";
 
 function HireTalent() {
+
+  const navigate = useNavigate();
   return (
     <Layout>
       <section className="flex flex-row h-[78vh]">
@@ -18,13 +22,13 @@ function HireTalent() {
             <p className="text-white text-6xl text-center w-[85%] mx-auto">
               El talento que buscas ha llegado a tu puerta
             </p>
-            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit mt-10 mx-auto">
+            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit mt-10 mx-auto" onClick={() => navigate('/contact')}>
               Descúbrelo!
             </button>
           </div>
         </article>
         <article className="bg-white w-1/2">
-          <img src={BannerTeam} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
+          <img src={BannerHire} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
       </section>
       <section className="flex flex-col h-[50vh] bg-blue-main justify-center items-center">
@@ -50,7 +54,7 @@ function HireTalent() {
       <section className="flex flex-col bg-alabaster justify-center items-center py-20">
         <h1 className="text-center text-main-purple text-6xl"> Nuestros aliados ya tienen </h1>
         <h1 className="text-center text-main-purple text-6xl"> al equipo de sus sueños</h1>
-        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-16 ">
+        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-16 " onClick={() => navigate('/contact')}>
           Únete ahora
         </button>
       </section>
@@ -84,14 +88,14 @@ function HireTalent() {
 
       <section className="flex flex-row h-[78vh]">
         <article className="bg-white w-1/2">
-          <img src={BannerTeam} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
+          <img src={BannerTwoHire} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
         <article className="bg-pink-main w-1/2 flex items-center justify-center ">
           <div className="flex flex-col justify-center gap-7 w-[80%]">
             <p className="text-main-purple text-5xl text-center w-[85%] mx-auto">
               Las empresas incluyentes son empresas más productivas
             </p>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-10 mx-auto">
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit mt-10 mx-auto" onClick={() => navigate('/contact')}>
               Quieres saber más?
             </button>
           </div>
