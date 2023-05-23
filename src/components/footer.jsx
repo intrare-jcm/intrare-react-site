@@ -24,7 +24,7 @@ const Footer = () => {
             <li className="text-main-purple list-none font-bold text-lg">Contacto</li>
           </article>
           <article className="flex flex-col w-[55%] justify-self-end mr-20">
-            <button type="button" className="bg-blue-main py-3 px-8 text-main-purple rounded text-lg w-fit " onClick={() => navigate('/contact')}>
+            <button type="button" className="bg-blue-main py-3 px-8 text-main-purple rounded text-lg w-fit " onClick={() => navigate('/contacto')}>
               Contacto
             </button>
             <div className="flex flex-row justify-between	pt-8">
