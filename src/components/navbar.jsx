@@ -8,9 +8,9 @@ function Navbar() {
     navidate(path);
   };
   return (
-    <main className="h-[20vh] portrait:h-auto flex flex-col">
-      <section className="flex flex-row bg-main-purple p-3 justify-between h-[50%] portrait:flex-col portrait:h-[70%] portrait:items-center">
-        <img src={LogoWhite} alt="Logo | white" className=" h-auto portrait:h-[20px] portrait:w-auto" onClick={() => onClick('/')} />
+    <main className=" portrait:h-auto flex flex-col bg-main-purple">
+      <section className="flex flex-row bg-main-purple p-3 justify-between items-center portrait:flex-col portrait:items-center py-[16px]">
+        <img src={LogoWhite} alt="Logo | white" className=" h-[20px] portrait:h-[20px] portrait:w-auto portrait:py-0" onClick={() => onClick('/')} />
         <div className="flex flex-row gap-9 mr-10 items-center portrait:mr-0 portrait:m-2">
           <p className="text-white cursor-pointer lg:text-lg sm:text-xs" onClick={() => onClick('/sobre-nosotros')}>
             Conócenos
@@ -24,7 +24,7 @@ function Navbar() {
           </button>
         </div>
       </section>
-      <section className="flex flex-row h-[50%] portrait:h-[30%]">
+      <section className="flex flex-row h-[10vh] portrait:h-[30%]">
         <button
           type="button"
           onClick={() => onClick('/empresas')}

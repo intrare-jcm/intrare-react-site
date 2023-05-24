@@ -18,10 +18,10 @@ const Footer = () => {
             </div>
           </article>
           <article className="flex flex-col gap-1 portrait:items-center portrait:m-2">
-            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base">Vacantes</li>
-            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base">Contrata</li>
-            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base">¿Quiénes somos?</li>
-            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base">Contacto</li>
+            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base" onClick={() => navigate('/empresas')}>Vacantes</li>
+            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base" onClick={() => navigate('/talento')}>Contrata</li>
+            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base" onClick={() => navigate('/sobre-nosotros')}>¿Quiénes somos?</li>
+            <li className="text-main-purple list-none font-bold lg:text-lg sm:text-base" onClick={() => navigate('/contacto')} >Contacto</li>
           </article>
           <article className="flex flex-col w-[55%] justify-self-end lg:mr-20 sm:mr-10 portrait:w-full portrait:items-center portrait:my-4" >
             <button type="button" className="bg-blue-main py-3 px-8 text-main-purple rounded lg:text-lg sm:text-base w-fit " onClick={() => navigate('/contacto')}>
