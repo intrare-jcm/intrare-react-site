@@ -9,35 +9,35 @@ function Navbar() {
   };
   return (
     <main className="h-[20vh] flex flex-col">
-      <section className="flex flex-row bg-main-purple p-3 justify-between h-[50%]">
-        <img src={LogoWhite} alt="Logo | white" className="" onClick={() => onClick('/')} />
-        <div className="flex flex-row gap-9 mr-10 items-center">
-          <p className="text-white cursor-pointer" onClick={() => onClick('/about')}>
+      <section className="flex flex-row bg-main-purple p-3 justify-between h-[50%] portrait:flex-col portrait:h-[70%] portrait:items-center">
+        <img src={LogoWhite} alt="Logo | white" className="portrait:h-[50%] portrait:w-[70%]" onClick={() => onClick('/')} />
+        <div className="flex flex-row gap-9 mr-10 items-center portrait:mr-0 portrait:m-2">
+          <p className="text-white cursor-pointer lg:text-lg sm:text-xs" onClick={() => onClick('/about')}>
             Conócenos
           </p>
           <button
             onClick={() => onClick('/contact')}
             type="button"
-            className="bg-blue-main py-3 px-8 text-main-purple rounded text-lg w-fit hover:bg-alabaster"
+            className="bg-blue-main py-3 px-8 text-main-purple rounded lg:text-lg sm:text-xs w-fit hover:bg-alabaster"
           >
             Contacto
           </button>
         </div>
       </section>
-      <section className="flex flex-row h-[50%]">
+      <section className="flex flex-row h-[50%] portrait:h-[30%]">
         <button
           type="button"
           onClick={() => onClick('/discoverVacancies')}
           className="flex w-[50%] justify-center items-center bg-pink-main"
         >
-          <p className="text-main-purple text-xl">Descubre vacantes</p>
+          <p className="text-main-purple lg:text-xl sm:text-bas">Descubre vacantes</p>
         </button>
         <button
           type="button"
           onClick={() => onClick('/hireTalent')}
           className="flex w-[50%] justify-center items-center bg-orange-main"
         >
-          <p className="text-white text-xl">Contrata talento</p>
+          <p className="text-white lg:text-xl sm:text-base">Contrata talento</p>
         </button>
       </section>
     </main>

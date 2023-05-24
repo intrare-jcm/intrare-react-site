@@ -11,24 +11,24 @@ import Raymundo from 'assets/img/Raymundo.png';
 function About() {
   return (
     <Layout>
-      <section className="flex flex-row bg-main-purple h-min-[58vh]">
-        <article className="flex flex-col gap-2 w-1/2 mt-16 ml-16 mb-[12rem]">
-          <h1 className="text-white text-6xl">If we hace the power,</h1>
-          <h1 className="text-white text-6xl">why don't we change</h1>
-          <h1 className="text-white text-6xl">the world?</h1>
+      <section className="flex flex-row bg-main-purple h-min-[58vh] portrait:flex-col">
+        <article className="flex flex-col gap-2 w-1/2 mt-16 ml-16 mb-[12rem] portrait:w-full portrait:h-full portrait:m-0 portrait:m-3 portrait:items-center">
+          <h1 className="text-white lg:text-6xl sm:text-3xl">If we hace the power,</h1>
+          <h1 className="text-white lg:text-6xl sm:text-3xl">why don't we change</h1>
+          <h1 className="text-white lg:text-6xl sm:text-3xl">the world?</h1>
         </article>
-        <div className="w-1/2">
+        <div className="w-1/2 portrait:w-full">
           <img src={IconBannerAbout} alt="Icon" />
         </div>
       </section>
-      <section className="flex flex-row h-[78vh]">
-        <article className="bg-white w-1/2">
+      <section className="flex flex-row h-[78vh] portrait:flex-col-reverse">
+        <article className="bg-white w-1/2 portrait:w-full">
           <img src={PortalAbout} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
-        <article className="bg-alabaster w-1/2 flex items-center justify-center ">
+        <article className="bg-alabaster w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
           <div className="flex flex-col justify-center gap-12 w-[80%]">
-            <h1 className="text-main-purple text-6xl w-[80%]">El portal del talento humano </h1>
-            <p className="text-main-purple text-2xl w-[50%]">
+            <h1 className="text-main-purple lg:text-6xl sm:text-3xl max-sm:text-2xl  w-[80%]">El portal del talento humano </h1>
+            <p className="text-main-purple lg:text-2xl sm:text-base max-sm:text-base w-[50%]">
               Vinculamos a personas diversas con el empleo de sus sueños
             </p>
           </div>
@@ -75,15 +75,15 @@ function About() {
           </article>
         </div>
       </section>
-      <section className="flex flex-col h-[78vh] bg-pink-main justify-center items-center gap-14">
+      <section className="flex flex-col h-[78vh] bg-pink-main justify-center items-center lg:gap-14 sm:gap-7 max-sm:gap-7">
         <div className="flex flex-col justify-center items-center gap-2">
-          <h1 className="text-main-purple text-5xl">Creando sociedades</h1>
-          <h1 className="text-main-purple text-5xl">más incluyentes.</h1>
+          <h1 className="text-main-purple lg:text-5xl sm:text-2xl max-sm:text-xl">Creando sociedades</h1>
+          <h1 className="text-main-purple lg:text-5xl sm:text-2xl max-sm:text-xl">más incluyentes.</h1>
         </div>
-        <p className="text-main-purple text-2xl w-[35%] text-center">
+        <p className="text-main-purple lg:text-2xl sm:text-base w-[35%] text-center">
           Un mundo laboral mejor conectado, libre y seguro.
         </p>
-        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg w-fit ">
+        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit ">
           Empieza hoy
         </button>
       </section>

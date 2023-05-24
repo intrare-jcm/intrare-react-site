@@ -31,7 +31,11 @@ function App() {
       element: <Contact />,
     },
   ]);
-  return <RouterProvider router={router} />;
+  return (
+      <main className="w-[100%] bg-red-100">
+        <RouterProvider router={router} />
+      </main>
+  );
 }
 
 export default App;
