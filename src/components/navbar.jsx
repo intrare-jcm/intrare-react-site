@@ -8,9 +8,9 @@ function Navbar() {
     navidate(path);
   };
   return (
-    <main className="h-[20vh] flex flex-col">
+    <main className="h-[20vh] portrait:h-auto flex flex-col">
       <section className="flex flex-row bg-main-purple p-3 justify-between h-[50%] portrait:flex-col portrait:h-[70%] portrait:items-center">
-        <img src={LogoWhite} alt="Logo | white" className="portrait:h-[50%] portrait:w-[70%]" onClick={() => onClick('/')} />
+        <img src={LogoWhite} alt="Logo | white" className=" h-auto portrait:h-[20px] portrait:w-auto" onClick={() => onClick('/')} />
         <div className="flex flex-row gap-9 mr-10 items-center portrait:mr-0 portrait:m-2">
           <p className="text-white cursor-pointer lg:text-lg sm:text-xs" onClick={() => onClick('/sobre-nosotros')}>
             Conócenos
@@ -28,14 +28,14 @@ function Navbar() {
         <button
           type="button"
           onClick={() => onClick('/empresas')}
-          className="flex w-[50%] justify-center items-center bg-pink-main"
+          className="flex w-[50%] justify-center items-center bg-pink-main portrait:py-5"
         >
           <p className="text-main-purple lg:text-xl sm:text-bas">Descubre vacantes</p>
         </button>
         <button
           type="button"
           onClick={() => onClick('/talento')}
-          className="flex w-[50%] justify-center items-center bg-orange-main"
+          className="flex w-[50%] justify-center items-center bg-orange-main portrait:py-5"
         >
           <p className="text-white lg:text-xl sm:text-base">Contrata talento</p>
         </button>

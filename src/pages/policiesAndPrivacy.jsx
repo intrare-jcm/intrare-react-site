@@ -121,7 +121,8 @@ function PoliciesAndPrivacy() {
                         <li><p className="whitespace-pre-wrap">Para dar cumplimiento a la relación jurídica que
                             nos une.</p></li>
                     </ul>
-                    <p className="whitespace-pre-wrap"><strong>3. RECABACIÓN DE DATOS</strong></p><p
+                    <p className="whitespace-pre-wrap"><strong>3. RECABACIÓN DE DATOS</strong></p>
+                    <p
                     className="whitespace-pre-wrap">Los
                     datos personales son recabados por INTRARE i) al momento en que se solicita a INTRARE la prestación de
                     alguno de los servicios que ofrece conforme a su objeto social; ii) En el caso de refugiados, al momento
