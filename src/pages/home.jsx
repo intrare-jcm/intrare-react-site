@@ -62,7 +62,7 @@ function Home() {
               <p className="text-main-purple lg:text-2xl sm:text-sm">Somos tu equipo extedido</p>
               <p className="text-main-purple lg:text-2xl sm:text-sm">de RH y reclutamiento</p>
             </div>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit " onClick={() => navigate('/contact')}>
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit " onClick={() => navigate('/contacto')}>
               Contrata aqui
             </button>
           </div>
@@ -77,7 +77,7 @@ function Home() {
               Utilizamos tecnología AI para crear conexiones épicas. Encuentra empleom ofrece tus vacantes. Todo en un
               sólo lugar.
             </p>
-            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded lg:text-lg sm:text-sm w-fit" onClick={() => navigate('/hireTalent')}>
+            <button type="button" className="bg-white py-3 px-8 text-main-purple rounded lg:text-lg sm:text-sm w-fit" onClick={() => navigate('/talento')}>
               Intégrate
             </button>
           </div>

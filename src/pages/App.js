@@ -7,6 +7,7 @@ import DiscoverVacancies from './discoverVacancies';
 import HireTalent from './hireTalent';
 import About from './about';
 import Contact from './contact';
+import PoliciesAndPrivacy from "./policiesAndPrivacy";
 
 function App() {
   const router = createBrowserRouter([
@@ -15,21 +16,26 @@ function App() {
       element: <Home />,
     },
     {
-      path: 'discoverVacancies',
-      element: <DiscoverVacancies />,
-    },
-    {
-      path: 'about',
-      element: <About />,
-    },
-    {
-      path: 'hireTalent',
+      path: 'empresas',
       element: <HireTalent />,
     },
     {
-      path: 'contact',
+      path: 'sobre-nosotros',
+      element: <About />,
+    },
+    {
+      path: 'talento',
+
+      element: <DiscoverVacancies />,
+    },
+    {
+      path: 'contacto',
       element: <Contact />,
     },
+    {
+      path: 'politica-de-privacidad',
+      element: <PoliciesAndPrivacy />
+    }
   ]);
   return (
       <main className="w-[100%] bg-red-100">

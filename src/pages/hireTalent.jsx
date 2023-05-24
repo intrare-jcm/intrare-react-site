@@ -54,7 +54,7 @@ function HireTalent() {
       <section className="flex flex-col bg-alabaster justify-center items-center py-20">
         <h1 className="text-center text-main-purple lg:text-6xl sm:text-3xl"> Nuestros aliados ya tienen </h1>
         <h1 className="text-center text-main-purple lg:text-6xl sm:text-3xl"> al equipo de sus sueños</h1>
-        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit mt-16 " onClick={() => navigate('/contact')}>
+        <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit mt-16 " onClick={() => navigate('/contacto')}>
           Únete ahora
         </button>
       </section>
@@ -95,7 +95,7 @@ function HireTalent() {
             <p className="text-main-purple lg:text-5xl sm:text-2xl text-center w-[85%] mx-auto">
               Las empresas incluyentes son empresas más productivas
             </p>
-            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit mt-10 mx-auto" onClick={() => navigate('/contact')}>
+            <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit mt-10 mx-auto" onClick={() => navigate('/contacto')}>
               Quieres saber más?
             </button>
           </div>
