@@ -11,13 +11,13 @@ function Contact() {
         </article>
         <article className="bg-blue-main w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
           <div className="flex flex-col justify-center gap-7 w-[80%] justify-center items-center">
-            <h1 className="text-main-purple lg:text-6xl sm:text-3xl"> Cuéntanos</h1>
-            <h1 className="text-main-purple lg:text-6xl sm:text-3xl"> qué deseas </h1>
+            <h1 className="text-main-purple lg:text-6xl text-3xl"> Cuéntanos</h1>
+            <h1 className="text-main-purple lg:text-6xl text-3xl"> qué deseas </h1>
           </div>
         </article>
       </section>
       <section className="flex flex-row bg-main-purple portrait:flex-col">
-        <article className="lg:w-1/2 sm:w-full flex flex-col ml-20 mt-20 gap-8">
+        <article className="lg:w-1/2 sm:w-full flex flex-col mx-auto md:ml-20 mt-20 gap-8">
           <div>
             <h1 className="text-white text-4xl">Cuenta con Intrare</h1>
             <h1 className="text-white text-4xl">para hacerlo realidad</h1>

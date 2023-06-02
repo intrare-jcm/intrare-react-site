@@ -11,11 +11,11 @@ import Raymundo from 'assets/img/Raymundo.png';
 function About() {
   return (
     <Layout>
-      <section className="flex flex-row bg-main-purple h-min-[58vh] portrait:flex-col">
-        <article className="flex flex-col gap-2 w-1/2 mt-16 ml-16 mb-[12rem] portrait:w-full portrait:h-full portrait:m-0 portrait:m-3 portrait:items-center">
-          <h1 className="text-white lg:text-6xl sm:text-3xl">If we hace the power,</h1>
-          <h1 className="text-white lg:text-6xl sm:text-3xl">why don't we change</h1>
-          <h1 className="text-white lg:text-6xl sm:text-3xl">the world?</h1>
+      <section className="flex flex-row bg-main-purple portrait:flex-col">
+        <article className="grid grid-cols-1 w-1/2 pt-16 ml-16 xl:mb-[24rem] portrait:w-full portrait:h-full portrait:m-0 portrait:m-3 portrait:items-center">
+          <h1 className="text-white lg:text-6xl text-3xl">If we have the power,</h1>
+          <h1 className="text-white lg:text-6xl text-3xl">why don't we change</h1>
+          <h1 className="text-white lg:text-6xl text-3xl">the world?</h1>
         </article>
         <div className="w-1/2 portrait:w-full">
           <img src={IconBannerAbout} alt="Icon" />
@@ -25,9 +25,9 @@ function About() {
         <article className="bg-white w-1/2 portrait:w-full">
           <img src={PortalAbout} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
-        <article className="bg-alabaster w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
+        <article className="bg-alabaster w-1/2 py-16 xl:py-0 flex items-center justify-center portrait:w-full portrait:h-full">
           <div className="flex flex-col justify-center gap-12 w-[80%]">
-            <h1 className="text-main-purple lg:text-6xl sm:text-3xl max-sm:text-2xl  w-[80%]">El portal del talento humano </h1>
+            <h1 className="text-main-purple lg:text-6xl text-3xl w-[80%]">El portal del talento humano </h1>
             <p className="text-main-purple lg:text-2xl sm:text-base max-sm:text-base w-[50%]">
               Vinculamos a personas diversas con el empleo de sus sueños
             </p>
@@ -36,8 +36,8 @@ function About() {
       </section>
 
       <section className="flex flex-col bg-main-purple h-min-[58vh] ">
-        <div className=" flex flex-row flex-wrap gap-x-14 gap-y-2 justify-evenly">
-          <article className="h-80 w-[22%] flex flex-col justify-center items-center">
+        <div className=" grid grid-cols-2 xl:grid-cols-4 justify-evenly">
+          <article className="h-80 flex flex-col justify-center items-center">
             <div className="bg-blue-main w-[100px] h-[100px] rounded-full	flex justify-center items-center">
               <img className="w-[100px]" src={Hannah} alt="icon | white" />
             </div>
@@ -46,7 +46,7 @@ function About() {
               <h2 className="text-white text-1xl text-center"> Hannah Töpler </h2>
             </div>
           </article>
-          <article className="h-80 w-[22%] flex flex-col justify-center items-center">
+          <article className="h-80 flex flex-col justify-center items-center">
             <div className="bg-blue-main w-[100px] h-[100px] rounded-full	flex justify-center items-center">
               <img className="w-[100px]" src={Sofia} alt="icon | white" />
             </div>
@@ -55,16 +55,16 @@ function About() {
               <h2 className="text-white text-1xl text-center"> Sofía Campa</h2>
             </div>
           </article>
-          <article className="h-80 w-[22%] flex flex-col justify-center items-center">
+          <article className="h-80 flex flex-col justify-center items-center">
             <div className="bg-blue-main w-[100px] h-[100px] rounded-full	flex justify-center items-center">
               <img className="w-[100px]" src={Carlos} alt="icon | white" />
             </div>
             <div className="flex flex-col gap-2 mt-6">
-              <h1 className="text-white text-2xl text-center"> Co-Founder & CTO</h1>
+              <h1 className="text-white text-2xl text-center">CTO</h1>
               <h2 className="text-white text-1xl text-center"> Carlos Martínez </h2>
             </div>
           </article>
-          <article className="h-80 w-[22%] flex flex-col justify-center items-center">
+          <article className="h-80 flex flex-col justify-center items-center">
             <div className="bg-blue-main w-[100px] h-[100px] rounded-full	flex justify-center items-center">
               <img className="w-[100px]" src={Raymundo} alt="icon | white" />
             </div>

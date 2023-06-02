@@ -13,14 +13,14 @@ import {onRedirection} from "../utils/helperGeneral";
 function DiscoverVacancies() {
   return (
     <Layout>
-      <section className="flex flex-row h-[78vh] portrait:flex-col-reverse ">
+      <section className="flex flex-row  md:min-h-[78vh] portrait:flex-col-reverse ">
         <article className="bg-white w-1/2 portrait:w-full">
           <img src={CandidateImg} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
 
-        <article className="bg-alabaster w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
-          <div className="flex flex-col justify-center gap-7 w-[70%] items-center">
-            <h1 className="text-main-purple lg:text-6xl sm:text-3xl text-center">¡Se solicita tu talento!</h1>
+        <article className="bg-alabaster w-1/2 flex py-8 xl:py-0 items-center justify-center portrait:w-full portrait:h-full">
+          <div className="flex flex-col justify-center gap-7 w-10/12 xl:w-[70%] items-center">
+            <h1 className="text-main-purple lg:text-6xl text-3xl text-center">¡Se solicita tu talento!</h1>
             <div>
               <p className="text-main-purple lg:text-2xl sm:text-base text-center">Todos tenemos un lugar.</p>
               <p className="text-main-purple lg:text-2xl sm:text-base text-center">Estamos aquí para encontrar el tuyo</p>
@@ -31,14 +31,14 @@ function DiscoverVacancies() {
           </div>
         </article>
       </section>
-      <section className="flex flex-col h-[50vh] bg-main-purple justify-center items-center">
-        <h1 className="text-center text-white lg:text-6xl sm:text-3xl"> Donde hay rechazo, </h1>
-        <h1 className="text-center text-white lg:text-6xl sm:text-3xl"> nosotros abrimos una puerta.</h1>
+      <section className="grid grid-cols-1 gap-4 relative py-32 bg-main-purple">
+        <h1 className="text-center text-white lg:text-6xl text-3xl leading-10"> Donde hay rechazo, </h1>
+        <h1 className="text-center text-white lg:text-6xl text-3xl leading-10"> nosotros abrimos una puerta.</h1>
       </section>
       <section className="flex flex-row h-[78vh] portrait:flex-col-reverse ">
-        <article className="bg-blue-main w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
-          <div className="flex flex-col justify-center gap-7 w-[70%] ">
-            <h1 className="text-main-purple lg:text-4xl sm:text-2xl text-left w-[60%]">Tus sueños se hacen realidad en</h1>
+        <article className="bg-blue-main py-12 xl:py-0 w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
+          <div className="flex flex-col justify-center gap-7 w-10/12 xl:w-[70%] ">
+            <h1 className="text-main-purple lg:text-4xl text-3xl text-left w-[60%]">Tus sueños se hacen realidad en</h1>
             <img className="w-[70%]" src={IconHubPurpleLogo} alt="icon | white" />
             <div className=" w-[80%]">
               <p className="text-main-purple lg:text-2xl sm:text-base text-left">Un mundo de puertas abiertas</p>
@@ -53,21 +53,21 @@ function DiscoverVacancies() {
           <img src={BannerDream} alt="banner Team" className="object-cover object-center h-[100%] w-[100%] " />
         </article>
       </section>
-      <section className="grid grid-cols-3 lg:gap-10 sm:gap-4 h-[76vh] bg-alabaster portrait:grid-cols-1">
+      <section className="grid grid-cols-3 lg:gap-10 gap-4 pt-16 xl:pt-0 h-[78vh] bg-alabaster portrait:grid-cols-1">
         <article className="flex flex-col w-[60%]  m-auto lg:gap-8 sm:gap-2">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconCom} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconCom} alt="logo  - Comunidad" className="w-[75%] xl:w-full object-contain object-center" />
           </div>
-          <h1 className="text-main-purple text-center lg:text-4xl sm:text-2xl"> Comunidad </h1>
+          <h1 className="text-main-purple text-center lg:text-4xl text-2xl my-4 xl:my-0"> Comunidad </h1>
           <p className="text-main-purple lg:text-2xl sm:text-base text-center">
             Encuentra una comunidad de apoyo entre personas diversas
           </p>
         </article>
         <article className="flex flex-col w-[60%]  m-auto lg:gap-8 sm:gap-2">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconCap} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconCap} alt="logo  - Comunidad" className="w-[75%] xl:w-full object-contain object-center" />
           </div>
-          <h1 className="text-main-purple text-center lg:text-4xl sm:text-2xl"> Capacitaciones </h1>
+          <h1 className="text-main-purple text-center lg:text-4xl text-2xl my-4 xl:my-0"> Capacitaciones </h1>
           <p className="text-main-purple lg:text-2xl sm:text-base text-center">
             {' '}
             Preparación de CV, entrevistas y habilidades clave para el empleo{' '}
@@ -75,48 +75,48 @@ function DiscoverVacancies() {
         </article>
         <article className="flex flex-col w-[60%]  m-auto lg:gap-8 sm:gap-2">
           <div className="w-1/4 flex justify-center items-center m-auto">
-            <img src={IconMen} alt="logo  - Comunidad" className="object-contain object-center" />
+            <img src={IconMen} alt="logo  - Comunidad" className="w-[75%] xl:w-full object-contain object-center" />
           </div>
-          <h1 className="text-main-purple text-center lg:text-4xl sm:text-2xl"> Mentorías </h1>
+          <h1 className="text-main-purple text-center lg:text-4xl text-2xl my-4 xl:my-0"> Mentorías </h1>
           <p className="text-main-purple lg:text-2xl sm:text-base text-center">
             {' '}
             Personas que te acompañan en cada paso de la integración{' '}
           </p>
         </article>
       </section>
-      <section className="flex flex-col h-[50vh] bg-alabaster justify-center items-center">
-        <h1 className="text-center text-main-purple  "> Las mejores vacantes en las </h1>
-        <h1 className="text-center text-main-purple lg:text-6xl sm:text-3xl">empresas más inclusivas</h1>
+      <section className="flex flex-col py-16 xl:py-0 xl:pb-32 relative bg-alabaster justify-center items-center">
+        <h1 className="text-center text-main-purple lg:text-6xl text-3xl "> Las mejores vacantes en las </h1>
+        <h1 className="text-center text-main-purple lg:text-6xl text-3xl">empresas más inclusivas</h1>
         <button type="button" className="bg-main-purple py-3 px-8 text-white rounded lg:text-lg sm:text-sm w-fit mt-10" onClick={()=>onRedirection()}>
           Regístrate
         </button>
       </section>
       <section className="flex flex-row portrait:flex-col">
         <article className="bg-blue-main w-1/2 h-[50vh] flex flex-col lg:gap-10 sm:gap-3 justify-center items-center portrait:w-full ">
-          <h1 className="text-main-purple lg:text-3xl sm:text-lg w-1/2">
+          <h1 className="text-main-purple xl:text-3xl text-2xl w-1/2">
             "Intrare me ha ayudado a capcitarme para entrevistas de trabajo"
           </h1>
-          <li className="text-main-purple lg:text-1xl sm:text-xs w-1/2"> Ricado Rivero, venezolano, 46 años </li>
+          <li className="text-main-purple lg:text-1xl sm:text-xs mt-4 xl:mt-0 w-1/2"> Ricado Rivero, venezolano, 46 años </li>
         </article>
         <article className="bg-main-purple w-1/2 h-[50vh] flex flex-col lg:gap-10 sm:gap-3 justify-center items-center portrait:w-full">
-          <h1 className="text-white lg:text-3xl sm:text-lg w-1/2">
+          <h1 className="text-white xl:text-3xl text-2xl w-1/2">
             "Gracias a Intrare puedo integrarme legalmente a la sociedad trabajadora del país"
           </h1>
-          <li className="text-white lg:text-1xl sm:text-xs w-1/2"> Armando Viera, cubano, 30 años </li>
+          <li className="text-white lg:text-1xl sm:text-xs mt-4 xl:mt-0  w-1/2"> Armando Viera, cubano, 30 años </li>
         </article>
       </section>
       <section className="flex flex-row portrait:flex-col">
         <article className="bg-orange-main w-1/2 h-[50vh] flex flex-col lg:gap-10 sm:gap-3 justify-center items-center portrait:w-full">
-          <h1 className="text-white lg:text-3xl sm:text-lg w-1/2">
+          <h1 className="text-white xl:text-3xl text-2xl w-1/2">
             "Intrare me ha ayudado a capcitarme para entrevistas de trabajo"
           </h1>
-          <li className="text-white lg:text-1xl sm:text-xs w-1/2"> Ricado Rivero, venezolano, 46 años </li>
+          <li className="text-white lg:text-1xl sm:text-xs mt-4 xl:mt-0  w-1/2"> Ricado Rivero, venezolano, 46 años </li>
         </article>
         <article className="bg-pink-main w-1/2 h-[50vh] flex flex-col lg:gap-10 sm:gap-3 justify-center items-center portrait:w-full">
-          <h1 className="text-main-purple lg:text-3xl sm:text-lg w-1/2">
+          <h1 className="text-main-purple xl:text-3xl text-2xl w-1/2">
             "Gracias a Intrare puedo integrarme legalmente a la sociedad trabajadora del país"
           </h1>
-          <li className="text-main-purple lg:text-1xl sm:text-xs w-1/2"> Armando Viera, cubano, 30 años </li>
+          <li className="text-main-purple lg:text-1xl sm:text-xs mt-4 xl:mt-0  w-1/2"> Armando Viera, cubano, 30 años </li>
         </article>
       </section>
     </Layout>
