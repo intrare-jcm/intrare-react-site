@@ -45,7 +45,7 @@ function Contact() {
             <label className="text-white text-1xl">Número telefónico</label>
             <div className="flex flex-row gap-6">
               <select className="bg-white px-8 rounded w-[25%]">
-                <option className="text-black">México</option>
+                <option className="text-black">MX</option>
               </select>
               <p className="bg-white rounded landscape:h-[100%] w-[15%] px-5 text-center flex justify-center items-center">+52</p>
               <input className="text-1xl rounded py-3 px-2 w-[60%] " />

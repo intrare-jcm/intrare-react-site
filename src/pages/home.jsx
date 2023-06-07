@@ -74,7 +74,7 @@ function Home() {
           <div className="flex flex-col justify-center gap-7 w-[70%] portrait:p-5 bg-main-purple">
             <img className="w-[90%] md:w-[60%]" src={LogoHub} alt="icon | white" />
             <p className="text-white lg:text-2xl sm:text-base">
-              Utilizamos tecnología AI para crear conexiones épicas. Encuentra empleom ofrece tus vacantes. Todo en un
+              Utilizamos tecnología AI para crear conexiones épicas. Encuentra empleo, ofrece tus vacantes. Todo en un
               sólo lugar.
             </p>
             <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit" onClick={() => navigate('/talento')}>
@@ -93,7 +93,7 @@ function Home() {
           <h1 className="text-main-purple lg:text-5xl text-3xl">Nosotros hacemos el resto.</h1>
         </div>
         <p className="text-main-purple lg:text-2xl mt-8 xl:mt-0 text-base text-center w-[35%] portrait:w-[80%] xl:text-left">
-          Nuestro modelo de confianza favorece el desarrollo pleno del talento y el crecimiento de las empresas, lejos
+          Nuestro modelo de confianza favorece el desarrollo pleno del talento y el crecimiento de las empresas. Lejos
           de la discriminación.
         </p>
         <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-lg  w-fit portrait:mt-4" onClick={() => onRedirection('https://candidates.intrare.mx')}>

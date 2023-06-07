@@ -28,10 +28,13 @@ const Footer = () => {
               Contacto
             </button>
             <div className="flex flex-row justify-between py-8 lg:py-4">
-              <Instagram size={30} className="text-main-purple hover:cursor-pointer" />
-              <Facebook size={30} className="text-main-purple hover:cursor-pointer" />
-              <Twitter size={30} className="text-main-purple hover:cursor-pointer" />
-              <Linkedin size={30} className="text-main-purple hover:cursor-pointer" />
+              <a href="https://www.instagram.com/intraremx/"> <Instagram size={30} className="text-main-purple hover:cursor-pointer" /></a>
+              {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+              <a href="https://www.facebook.com/intraremx"><Facebook size={30} className="text-main-purple hover:cursor-pointer" /></a>
+              {/* eslint-disable-next-line jsx-a11y/control-has-associated-label */}
+              <a href="https://twitter.com/intrare_mx"><Twitter size={30} className="text-main-purple hover:cursor-pointer" /></a>
+              {/* eslint-disable-next-line jsx-a11y/anchor-has-content,jsx-a11y/control-has-associated-label */}
+              <a href="https://www.linkedin.com/company/intrare/" /><Linkedin size={30} className="text-main-purple hover:cursor-pointer" />
             </div>
           </article>
         </section>

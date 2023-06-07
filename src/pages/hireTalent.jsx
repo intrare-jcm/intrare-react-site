@@ -1,7 +1,8 @@
 import React from 'react';
 import Layout from 'components/layout';
 import Logo from 'assets/img/logoFooter.png';
-import HubLogoPurple from 'assets/img/logoHubPurple.png';
+// import HubLogoPurple from 'assets/img/logoHubPurple.png';
+import ToolsAndTraining from 'assets/img/intrare-training.png';
 import LogoOne from 'assets/img/companies/unilever.png';
 import LogoTwo from 'assets/img/companies/Orbia_logo.svg.png';
 import LogoThree from 'assets/img/companies/Bimbo_logo.webp';
@@ -44,7 +45,7 @@ function HireTalent() {
           <h1 className="text-center text-main-purple lg:text-2xl sm:text-base "> para llevarte al siguiente nivel </h1>
         </div>
         <article className="grid grid-cols-4 gap-7 w-[80%] justify-center items-center py-10 mt-16 xl:mt-0 portrait:grid-cols-2">
-          <img className="m-auto w-1/2" src={LogoOne} alt="Logo | Empresa" />
+          <img className="m-auto w-[100px]" src={LogoOne} alt="Logo | Empresa" />
           <img className="m-auto w-1/2" src={LogoTwo} alt="Logo | Empresa" />
           <img className="m-auto w-1/2" src={LogoThree} alt="Logo | Empresa" />
           <img className="m-auto w-1/2" src={LogoFour} alt="Logo | Empresa" />
@@ -61,11 +62,12 @@ function HireTalent() {
 
       <section className="flex flex-col bg-pink-main justify-center items-center py-20">
         <h1 className="text-center text-main-purple lg:text-3xl text-2xl"> Hazlo realidad con </h1>
-        <div className="w-[260px] pt-10">
-          <img src={HubLogoPurple} alt="logo" className="w-[250px] " />
+        <div className="max-w-[450px] pt-10">
+          <img src={ToolsAndTraining} alt="logo" className="w-full " />
         </div>
         <p className="text-center text-main-purple lg:text-3xl text-lg mt-10"> Herramientas diversas para el liderazgo</p>
       </section>
+
 
       <section className="flex flex-col h-[50vh] grid grid-cols-3 justify-center items-center portrait:grid-cols-1">
         <article className="flex flex-col bg-main-purple h-[100%] justify-center items-center lg:gap-8 sm:gap-4">
