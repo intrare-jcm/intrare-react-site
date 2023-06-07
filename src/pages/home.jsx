@@ -90,7 +90,7 @@ function Home() {
       <section className="flex flex-col h-[78vh] bg-pink-main justify-center items-center lg:gap-14 sm:gap-6">
         <div className="flex flex-col justify-center items-center gap-2 portrait:gap-5">
           <h1 className="text-main-purple lg:text-5xl text-3xl">Asegúrate de brillar.</h1>
-          <h1 className="text-main-purple lg:text-5xl text-3xl">Nosotros hacemos el resto.</h1>
+          <h1 className="text-main-purple lg:text-5xl text-3xl text text-center md:text-left">Nosotros hacemos el resto.</h1>
         </div>
         <p className="text-main-purple lg:text-2xl mt-8 xl:mt-0 text-base text-center w-[35%] portrait:w-[80%] xl:text-left">
           Nuestro modelo de confianza favorece el desarrollo pleno del talento y el crecimiento de las empresas. Lejos
