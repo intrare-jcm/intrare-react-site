@@ -24,8 +24,8 @@ function Contact() {
         </article>
         <article className="bg-blue-main w-1/2 flex items-center justify-center portrait:w-full portrait:h-full">
           <div className="flex flex-col justify-center gap-7 w-[80%] justify-center items-center">
-            <h1 className="text-main-purple lg:text-6xl text-3xl"> Cuéntanos</h1>
-            <h1 className="text-main-purple lg:text-6xl text-3xl"> qué deseas </h1>
+            <h1 className="text-main-purple lg:text-6xl text-3xl">Cuéntanos,</h1>
+            <h1 className="text-main-purple lg:text-6xl text-3xl">¿Qué deseas?</h1>
           </div>
         </article>
       </section>

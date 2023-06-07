@@ -44,7 +44,7 @@ function Home() {
           <img className="m-auto w-1/2" src={LogoFour} alt="Logo | Empresa" />
         </article>
         <h3 className="text-main-purple lg:text-2xl sm:text-base font-light w-10/12	xl:w-5/12 text-center">
-          Expandimos las posibilidades del talento y abrimos las posibilidades de las empresa.{' '}
+          Expandimos las posibilidades del talento y abrimos las posibilidades de las empresas.{' '}
         </h3>
       </section>
 
@@ -59,11 +59,11 @@ function Home() {
               Accede a la red más grande de talento diverso en América Latina
             </h1>
             <div>
-              <p className="text-main-purple lg:text-2xl sm:text-base">Somos tu equipo extedido</p>
+              <p className="text-main-purple lg:text-2xl sm:text-base">Somos tu equipo extendido</p>
               <p className="text-main-purple lg:text-2xl sm:text-base">de RH y reclutamiento</p>
             </div>
             <button type="button" className="bg-main-purple py-3 px-8 text-white rounded text-base w-fit " onClick={() => navigate('/contacto')}>
-              Contrata aqui
+              Contrata aquí
             </button>
           </div>
         </article>
@@ -75,7 +75,7 @@ function Home() {
             <img className="w-[90%] md:w-[60%]" src={LogoHub} alt="icon | white" />
             <p className="text-white lg:text-2xl sm:text-base">
               Utilizamos tecnología AI para crear conexiones épicas. Encuentra empleo, ofrece tus vacantes. Todo en un
-              sólo lugar.
+              solo lugar.
             </p>
             <button type="button" className="bg-white py-3 px-8 text-main-purple rounded text-lg w-fit" onClick={() => navigate('/talento')}>
               Intégrate
