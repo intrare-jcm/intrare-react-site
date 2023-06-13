@@ -2,20 +2,36 @@ import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import Layout from 'components/layout';
 import BannerContact from 'assets/img/bannerContact.png';
+import CodePhone from 'utils/constant/codePhone.json';
 
 function Contact() {
+    const [selectCP, setSelectCP] = React.useState(
+        {
+            "nom": "Mexique",
+            "iso2": "MX",
+            "phoneCode": 52,
+            "name": "Mexico",
+            "iso3": "MEX",
+            "nombre": "México"
+        }
+    )
   const form = useRef();
   const sendEmail = (e) => {
     e.preventDefault();
 
     emailjs.sendForm('service_dfq8l1i', 'template_fhjp0mt', form.current, 'm07NV04VZfjsKTUBc')
-        .then((result) => {
-          console.log(result)
+        .then(() => {
           window.alert('Tu mensaje se ha enviado correctamente')
         }, (error) => {
           console.log(error.text);
         });
   };
+
+  function onChangeOption(e) {
+      const valueSelect = CodePhone?.find((cp) => cp?.iso2 === e.target.value);
+      setSelectCP(valueSelect);
+  }
+
   return (
     <Layout>
       <section className="flex flex-row h-[58vh] portrait:flex-col">
@@ -57,10 +73,16 @@ function Contact() {
             <div className="flex flex-col gap-2 w-[80%] mx-auto ">
               <label className="text-white text-1xl">Número telefónico</label>
               <div className="flex flex-row gap-6">
-                <select name='cx_code' className="bg-white px-8 rounded w-[25%]">
-                  <option className="text-black">MX</option>
+                <select name='cx_code' className="bg-white px-8 rounded w-[25%]" value={selectCP?.iso2} onChange={(e)=>onChangeOption(e)}>
+                    {
+                        CodePhone?.map(
+                            (codePhone) => (
+                                <option className="text-black" value={codePhone?.iso2}>{codePhone?.iso2}</option>
+                            )
+                        )
+                    }
                 </select>
-                <p className="bg-white rounded landscape:h-[100%] w-[15%] px-5 text-center flex justify-center items-center">+52</p>
+                <p className="bg-white rounded landscape:h-[100%] w-[15%] px-5 text-center flex justify-center items-center">+{selectCP?.phoneCode}</p>
                 <input name='phone' className="text-1xl rounded py-3 px-2 w-[60%] " />
               </div>
             </div>
