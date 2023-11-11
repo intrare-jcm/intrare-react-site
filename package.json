@@ -23,7 +23,7 @@
     "delete-maps": "rm ./build/static/js/*.map && rm ./build/static/css/*.map",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "deployProd": "gcloud compute scp --recurse --zone=us-central1-a --project=\"intrare-dev\" ./build/*  root@intrare-dev:/var/www/intrare.mx/html"
+    "deployProd": "yarn build && gcloud compute scp --recurse --zone=us-central1-a --project=\"intrare-dev\" ./build/*  root@intrare-dev:/var/www/intrare.mx/html"
   },
   "eslintConfig": {
     "extends": [

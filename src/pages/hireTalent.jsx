@@ -73,7 +73,7 @@ function HireTalent() {
         <article className="flex flex-col bg-main-purple h-[100%] justify-center items-center lg:gap-8 sm:gap-4">
           <h1 className="text-white text-center lg:text-4xl text-2xl mb-4">Curaduría de talento</h1>
           <p className="text-white lg:text-2xl sm:text-base max-sm:text-sm w-[65%] text-center">
-            Seleccionamos al mejor talento para tus necesitdades.
+            Seleccionamos al mejor talento para tus necesidades.
           </p>
         </article>
         <article className="flex flex-col bg-blue-main h-[100%] justify-center items-center lg:gap-8 sm:gap-4">
@@ -83,7 +83,7 @@ function HireTalent() {
           </p>
         </article>
         <article className="flex flex-col bg-orange-main h-[100%] justify-center items-center lg:gap-8 sm:gap-4">
-          <h1 className="text-white lg:text-4xl text-2xl mb-4">Capacitaciones</h1>
+          <h1 className="text-white lg:text-4xl text-2xl mb-4">Capacitarme</h1>
           <p className="text-white lg:text-2xl sm:text-base max-sm:text-sm w-[65%] text-center">Crea un equipo de líderes diversos en tu empresa</p>
         </article>
       </section>
