@@ -8,6 +8,7 @@ import About from './about';
 import Contact from './contact';
 import PoliciesAndPrivacy from "./policiesAndPrivacy";
 import Home from "./home";
+import AuroraArticle from './auroraArticle';
 
 function App() {
   const router = createBrowserRouter([
@@ -35,6 +36,10 @@ function App() {
     {
       path: 'politica-de-privacidad',
       element: <PoliciesAndPrivacy />
+    },
+    {
+      path: 'premio-aurora-tech',
+      element: <AuroraArticle />,
     }
   ]);
   return (
